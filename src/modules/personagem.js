@@ -1,8 +1,9 @@
 export class Personagem {
-    constructor(nome, vida, mana, level, tipo, descricao) {
+    vida = 100
+    mana = 100
+
+    constructor(nome, level, tipo, descricao) {
         this.nome = nome
-        this.vida = vida
-        this.mana = mana
         this.level = level
         this.tipo = tipo 
         this.descricao = descricao
