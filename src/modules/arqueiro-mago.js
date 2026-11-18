@@ -6,7 +6,8 @@ import { Mago } from "./mago.js";
 export class ArqueiroMago extends Personagem {
     ladoArqueiro
     ladoMagico
-    tipo = 'ArqueiroMago'
+    static tipo = 'ArqueiroMago'
+    static descricao = 'Detentor das lanças e flechas mágicas!'
 
     constructor(nome, level, destreza, elementoMagico, levelMagico, inteligencia) {
         super(nome, level)
