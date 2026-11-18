@@ -3,8 +3,8 @@ import { Personagem } from "./personagem.js"
 export class Mago extends Personagem {
     tipo = 'Mago'
 
-    constructor(nome, level, descricao, elementoMagico, levelMagico, inteligencia) {
-        super(nome, level, descricao)
+    constructor(nome, level, elementoMagico, levelMagico, inteligencia) {
+        super(nome, level)
         this.elementoMagico = elementoMagico
         this.levelMagico = levelMagico
         this.inteligencia = inteligencia
