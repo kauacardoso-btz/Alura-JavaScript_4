@@ -1,7 +1,7 @@
 export class Personagem {
     vida = 100
     mana = 100
-    #level = 0
+    #level = 1
     static descricao = 'Um formidável ser'
     static tipo = 'Plebeu'
 
@@ -18,11 +18,11 @@ export class Personagem {
     }
 
     aumentarLevel() {
-        this.#level ++
+        this.level ++
     }
 
     diminuirLevel() {
-        this.#level --
+        this.level --
     }
 
     static verificarVencedor(personagem1, personagem2) {
@@ -36,5 +36,10 @@ export class Personagem {
 
     get level() {
         return this.#level
+    }
+
+    set level(novoLevel) {
+        if (novoLevel >= 1 && novoLevel <= 10)
+            this.#level = novoLevel
     }
 }
